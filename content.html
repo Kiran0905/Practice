@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+	<link href="content.css" rel="stylesheet">
+    <title>Download</title>
+</head>
+<body>
+    <img src="images/background-image.jpg"width="100%" height="100%"/>
+  
+    <header class="bg-header">
+        <h2>WSM</h2>
+        <h1>Web Series Mania</h1>
+        </header>
+    <table class="bg-text">
+        <form class="bg.text"action="/home.html">
+    <tr>
+    <td>Country :</td>
+    <td><input type="text"></td>
+</tr>
+<br>
+    <tr>
+        <td>Rate :</td>
+        <td><input type="number" min="1" max="10"></td>
+    </tr>
+    <tr>
+        <td>Subtitles :</td>
+        <td><input type="checkbox" value="English">
+            <label for="sub1"> English</label>
+        <input type="checkbox" value="Hindi">
+            <label for="sub2">Hindi</label>    
+        <input type="checkbox" value="Korean">
+            <label for="sub3">Korean</label>
+        <input type="checkbox" value="Japanese">
+            <label for="sub4">Japanese</label>
+        <input type="checkbox" value="Chinese">
+            <label for="sub5">Chinese</label></td>
+    </tr>
+
+    <tr>
+        <td>Resolution : </td>
+        <td><input type="radio" id="1080p" name="resolution" value="1080p">1080p
+        <input type="radio" id="720p" name="resolution" value="720p">720p
+        <input type="radio" id="480p" name="resolution" value="480p">480p
+        <input type="radio" id="360p" name="resolution" value="360p">360p</td>
+    </tr>
+
+    <tr>
+        <td>Genre :</td>
+        <td><select class="option" name="Genre" size="5" multiple="multiple">
+            <option value="Adventure"> Adventure </option>
+            <option value="Action"> Action </option>
+            <option value="Comedy"> Comedy </option>
+            <option value="Romance"> Romance </option>
+            <option value="Sci-Fi"> Sci-Fi </option>
+            <option value="Drama"> Drama </option>
+        </select></td>
+    </tr>
+
+    <tr>
+        <td>Audio :</td>
+        <td><select name="Audio" class="option">
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Korean">Korean</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Chinese">Chinese</option>
+            </select></td>
+    </tr>
+
+    <tr id><td></td>
+        <td id="submit"><input type="reset" value="Clear">
+        <input type="submit" value="Download"></td>
+    </tr>
+        </form>
+    </table>
+    <footer id="footer">
+        <h5>© Copywrite 2021-2022. All Rights Reserved.</h5>
+    </footer>
+</body>
+</html>

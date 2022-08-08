@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Attendence Register</title>
+     <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+         td{
+             padding: 6px;
+             font-size: 100%;        
+        }
+    </style>
+    </head>
+    <body>
+        <form name ="student" method="get" action="">
+            <div class= "container">
+            <div class="row">
+                <table border=6 style="font-weight: bold;background-color: navajowhite;color: black">
+                <thead>
+                    <h3 style="background-color:brown; font-weight: bold; color: aliceblue;padding: 0.8%;width: 119%"><br>Register D2110 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Master of Computer Applications </h3></thead>
+                    
+                <tr><td>No.</td> <td>Registration no.</td><td>Student</td> 
+                     <td>Mark Register <br><input type="date" id="iMark" value=""></td>
+                     <td>Mark Register <br><input type="date" id="iMark" value=""></td>
+                     <td>Mark Register <br><input type="date" id="iMark" value=""></td>
+                     <td>Mark Register <br><input type="date" id="iMark" value=""></td>
+                     <td>Mark Register <br><input type="date" id="iMark" value=""></td>
+                     <td>Mark Register <br><input type="date" id="iMark" value=""></td>
+                     <td>Mark Register <br><input type="date" id="iMark" value=""></td>
+                    </tr>
+                    
+                    <tr><td><center>1</center></td><td>12100681</td><td>Amit Shah</td> 
+                        
+                            <td><select name ="Row1Col" id="iRow1Col" style="width: 120px;margin: 1px; text-align:right"onchange="myMark1(this.value);">   
+                        <option value="space"></option>
+                        <option value="present1">P</option>
+                        <option value ="absent1">A</option>
+                        <option value="duty1">Duty leave</option>
+                        <option value="noclass1">-</option>
+                            </select></td>
+                    
+                        
+                            <td><select name ="Row1Col2" id="iRow1Col2" style="width: 120px; margin: 1px; text-align:right"onchange="myMark2(this.value);">          
+                        <option value="space"></option>
+                        <option value="present2">P</option>
+                        <option value ="absent2">A</option>
+                        <option value="duty2">duty leave</option>
+                        <option value="noclass2">-</option>
+                            </select></td>
+                        
+                           <td><select name ="Row1Col3" id="iRow1Col3" style="width: 120px; margin: 1px; text-align:right"onchange="myMark3(this.value);">     
+                        <option value="space"></option>
+                        <option value="present3">/</option>
+                        <option value ="absent3">A</option>
+                        <option value="duty3">Duty leave</option>
+                        <option value="noclass3">-</option>
+                            </select></td>
+                    
+                        
+                          <td><select name ="Row1Col4" id="iRow1Col4" style="width: 120px; margin: 1px; text-align:right"onchange="myMark4(this.value);">        
+                        <option value="space"></option>
+                        <option value="present4">P</option>
+                        <option value ="absent4">A</option>
+                        <option value="duty4">duty leave</option>
+                        <option value="noclass4">-</option>
+                            </select></td>
+                        
+                           <td><select name ="Row1Col5" id="iRow1Col5" style="width: 120px; margin: 1px; text-align:right"onchange="myMark5(this.value);">                
+                        <option value="space"></option>
+                        <option value="present5">P</option>
+                        <option value ="absent5">A</option>
+                        <option value="duty5">Duty leave</option>
+                        <option value="noclass5">-</option>
+                            </select></td>
+                    
+                        
+                          <td><select name ="Row1Col6" id="iRow1Col6" style="width: 120px; margin: 1px; text-align:right"onchange="myMark6(this.value);">                 
+                        <option value="space"></option>
+                        <option value="present6">P</option>
+                        <option value ="absent6">A</option>
+                        <option value="duty6">duty leave</option>
+                        <option value="noclass6">-</option>
+                            </select></td>
+                        
+                            <td><select name ="Row1Col7" id="iRow1Col7" style="width: 120px; margin: 1px; text-align:right"onchange="myMark7(this.value);">
+                              
+                        <option value="space"></option>
+                        <option value="present7">P</option>
+                        <option value ="absent7">A</option>
+                        <option value="duty7">duty leave</option>
+                        <option value="noclass7">-</option>
+                            </select></td>
+                    </tr>
+                    
+                     <tr><td><center>2</center></td><td>12100682</td><td>Ankit Rawat</td>
+                         
+                          <td><select name ="Row2Col" id="iRow2Col" style="width: 120px; margin: 1px; text-align:right"onchange="myMark1(this.value);">       
+
+                               <option value="space"></option>
+                        <option value="present1">P</option>
+                        <option value ="absent1">A</option>
+                        <option value="duty1">Duty leave</option>
+                        <option value="noclass1">-</option>
+                            </select></td>
+                    
+                        
+                          <td><select name ="Row2Col2" id="iRow2Col2" style="width: 120px; margin: 1px; text-align:right"onchange="myMark2(this.value);">         
+                        <option value="space"></option>
+                        <option value="present9">/</option>
+                        <option value ="absent9">A</option>
+                        <option value="duty9">duty leave</option>
+                        <option value="noclass9">-</option>
+                            </select></td>
+                        
+                           <td><select name ="Row2Col3" id="iRow2Col3" style="width: 120px; margin: 1px; text-align:right"onchange="myMark3(this.value);">       
+                        <option value="space"></option>
+                        <option value="present10">P</option>
+                        <option value ="absent10">A</option>
+                        <option value="duty10">Duty leave</option>
+                        <option value="noclass10">-</option>
+                            </select></td>
+                    
+                        
+                          <td><select name ="Row2Col4" id="iRow2Col4" style="width: 120px; margin: 1px; text-align:right"onchange="myMark4(this.value);">        
+                        <option value="space"></option>
+                        <option value="present11">P</option>
+                        <option value ="absent11">A</option>
+                        <option value="duty11">duty leave</option>
+                        <option value="noclass11">-</option>
+                            </select></td>
+                        
+                           <td><select name ="Row2Col5" id="iRow2Col5" style="width: 120px; margin: 1px; text-align:right"onchange="myMark5(this.value);">     
+                        <option value="space"></option>
+                        <option value="present12">P</option>
+                        <option value ="absent12">A</option>
+                        <option value="duty12">Duty leave</option>
+                        <option value="noclass12">-</option>
+                            </select></td>
+                
+                          <td><select name ="Row2Col6" id="iRow2Col6" style="width: 120px; margin: 1px; text-align:right"onchange="myMark6(this.value);">          
+                        <option value="space"></option>
+                        <option value="present13">P</option>
+                        <option value ="absent13">A</option>
+                        <option value="duty13">duty leave</option>
+                        <option value="noclass13">-</option>
+                            </select></td>
+                        
+                            <td><select name ="Row2Col7" id="iRow2Col7" style="width: 120px; margin: 1px; text-align:right"onchange="myMark7(this.value);">         
+                        <option value="space"></option>
+                        <option value="present14">P</option>
+                        <option value ="absent14">A</option>
+                        <option value="duty14">duty leave</option>
+                        <option value="noclass14">-</option>
+                            </select></td>
+                    </tr>
+                        
+                     <tr><td><center>3</center></td><td>12100683</td><td>Anjali Rana</td>
+                        
+                            <td><select name ="Row3Col" id="iRow3Col" style="width: 120px; margin: 1px; text-align:right"onchange="myMark1(this.value);">         
+                        <option value="space"></option>
+                        <option value="present15">P</option>
+                        <option value ="absent15">A</option>
+                        <option value="duty15">Duty leave</option>
+                        <option value="noclass15">-</option>
+                            </select></td>
+                    
+                        
+                          <td><select name ="Row3Col2" id="iRow3Col2" style="width: 120px; margin: 1px; text-align:right"onchange="myMark2(this.value);">
+                        <option value="space"></option>
+                        <option value="present16">P</option>
+                        <option value ="absent16">A</option>
+                        <option value="duty16">duty leave</option>
+                        <option value="noclass16">-</option>
+                            </select></td>
+                       
+                           <td><select name ="Row3Col3" id="iRow3Col3" style="width: 120px; margin: 1px; text-align:right"onchange="myMark3(this.value);">      
+                        <option value="space"></option>
+                        <option value="present17">P</option>
+                        <option value ="absent17">A</option>
+                        <option value="duty17">Duty leave</option>
+                        <option value="noclass17">-</option>
+                            </select></td>
+                    
+                        
+                          <td><select name ="Row3Col4" id="iRow3Col4" style="width: 120px; margin: 1px; text-align:right"onchange="myMark4(this.value);">       
+                        <option value="space"></option>
+                        <option value="present18">P</option>
+                        <option value ="absent18">A</option>
+                        <option value="duty18">duty leave</option>
+                        <option value="noclass18">-</option>
+                            </select></td>
+                        
+                           <td><select name ="Row3Col5" id="iRow3Col5" style="width: 120px; margin: 1px; text-align:right"onchange="myMark5(this.value);">    
+                        <option value="space"></option>
+                        <option value="present19">P</option>
+                        <option value ="absent19">A</option>
+                        <option value="duty19">Duty leave</option>
+                        <option value="noclass19">-</option>
+                            </select></td>
+                                      
+                          <td><select name ="Row3Col6" id="iRow3Col6" style="width: 120px; margin: 1px; text-align:right"onchange="myMark6(this.value);">            
+                        <option value="space"></option>
+                        <option value="present20">P</option>
+                        <option value ="absent20">A</option>
+                        <option value="duty20">duty leave</option>
+                        <option value="noclass20">-</option>
+                            </select></td>
+                        
+                            <td><select name ="Row3Col7" id="iRow3Col7" style="width: 120px; margin: 1px; text-align:right"onchange="myMark7(this.value);">
+                        <option value="space"></option>
+                        <option value="present21">P</option>
+                        <option value ="absent21">A</option>
+                        <option value="duty21">duty leave</option>
+                        <option value="noclass21">-</option>
+                            </select></td>
+                    </tr>
+                    
+                     <tr><td><center>4</center></td><td>12100684</td><td>Anuj Pawar</td>
+                         
+                          <td><select name ="Row4Col" id="iRow4Col" style="width: 120px; margin: 1px; text-align:right"onchange="myMark1(this.value);">           
+                        <option value="space"></option>
+                        <option value="present22">P</option>
+                        <option value ="absent22">A</option>
+                        <option value="duty22">Duty leave</option>
+                        <option value="noclass22">-</option>
+                            </select></td>
+                    
+                        
+                          <td><select name ="Row4Col2" id="iRow4Col2" style="width: 120px; margin: 1px; text-align:right"onchange="myMark2(this.value);">                 
+                        <option value="space"></option>
+                        <option value="present23">P</option>
+                        <option value ="absent23">A</option>
+                        <option value="duty23">duty leave</option>
+                        <option value="noclass23">-</option>
+                            </select></td>
+                        
+                           <td><select name ="Row4Col3" id="iRow4Col3" style="width: 120px; margin: 1px; text-align:right"onchange="myMark3(this.value);">                
+                        <option value="space"></option>
+                        <option value="present24">P</option>
+                        <option value ="absent24">A</option>
+                        <option value="duty24">Duty leave</option>
+                        <option value="noclass24">-</option>
+                            </select></td>
+                    
+                        
+                          <td><select name ="Row4Col4" id="iRow4Col4" style="width: 120px; margin: 1px; text-align:right"onchange="myMark4(this.value);">          
+                        <option value="space"></option>
+                        <option value="present25">P</option>
+                        <option value ="absent25">A</option>
+                        <option value="duty25">duty leave</option>
+                        <option value="noclass25">-</option>
+                            </select></td>
+                        
+                           <td><select name ="Row4Col5" id="iRow4Col5" style="width: 120px; margin: 1px; text-align:right"onchange="myMark5(this.value);">      
+                        <option value="space"></option>
+                        <option value="present26">P</option>
+                        <option value ="absent26">A</option>
+                        <option value="duty26">Duty leave</option>
+                        <option value="noclass26">-</option>
+                            </select></td>
+                
+                          <td><select name ="Row4Col6" id="iRow4Col6" style="width: 120px; margin: 1px; text-align:right"onchange="myMark6(this.value);">          
+                        <option value="space"></option>
+                        <option value="present27">P</option>
+                        <option value ="absent27">A</option>
+                        <option value="duty27">duty leave</option>
+                        <option value="noclass27">-</option>
+                            </select></td>
+                        
+                            <td><select name ="Row4Col7" id="iRow4Col7" style="width: 120px; margin: 1px; text-align:right"onchange="myMark7(this.value);">       
+                        <option value="space"></option>
+                        <option value="present28">P</option>
+                        <option value ="absent28">A</option>
+                        <option value="duty28">duty leave</option>
+                        <option value="noclass28">-</option>
+                            </select></td>
+                    </tr>
+                    
+                    <tr><td><center>5</center></td><td>12100685</td><td>Kiran Panwar</td>
+                        
+                        <td><select name ="Row5Col" id="iRow5Col" style="width: 120px; margin: 1px; text-align:right"onchange="myMark1(this.value);">       
+                        <option value="space"></option>
+                        <option value="present15">P</option>
+                        <option value ="absent15">A</option>
+                        <option value="duty15">Duty leave</option>
+                        <option value="noclass15">-</option>
+                            </select></td>
+                    
+                        
+                          <td><select name ="Row5Col2" id="iRow5Col2" style="width: 120px; margin: 1px; text-align:right"onchange="myMark2(this.value);">          
+                        <option value="space"></option>
+                        <option value="present16">P</option>
+                        <option value ="absent16">A</option>
+                        <option value="duty16">duty leave</option>
+                        <option value="noclass16">-</option>
+                            </select></td>
+                       
+                           <td><select name ="Row5Col3" id="iRow5Col3" style="width: 120px; margin: 1px; text-align:right"onchange="myMark3(this.value);">        
+                        <option value="space"></option>
+                        <option value="present17">P</option>
+                        <option value ="absent17">A</option>
+                        <option value="duty17">Duty leave</option>
+                        <option value="noclass17">-</option>
+                            </select></td>
+                    
+                        
+                          <td><select name ="Row5Col4" id="iRow5Col4" style="width: 120px; margin: 1px; text-align:right"onchange="myMark4(this.value);">               
+                        <option value="space"></option>
+                        <option value="present18">P</option>
+                        <option value ="absent18">A</option>
+                        <option value="duty18">duty leave</option>
+                        <option value="noclass18">-</option>
+                            </select></td>
+                        
+                           <td><select name ="Row5Col5" id="iRow5Col5" style="width: 120px; margin: 1px; text-align:right"onchange="myMark5(this.value);">          
+                        <option value="space"></option>
+                        <option value="present19">P</option>
+                        <option value ="absent19">A</option>
+                        <option value="duty19">Duty leave</option>
+                        <option value="noclass19">-</option>
+                            </select></td>
+                    
+                        
+                          <td><select name ="Row5Col6" id="iRow5Col6" style="width: 120px; margin: 1px; text-align:right"onchange="myMark6(this.value);">           
+                        <option value="space"></option>
+                        <option value="present20">P</option>
+                        <option value ="absent20">A</option>
+                        <option value="duty20">duty leave</option>
+                        <option value="noclass20">-</option>
+                            </select></td>
+                        
+                            <td><select name ="Row5Col7" id="iRow5Col7" style="width: 120px; margin: 1px; text-align:right"onchange="myMark7(this.value);">               
+                        <option value="space"></option>
+                        <option value="present21">P</option>
+                        <option value ="absent21">A</option>
+                        <option value="duty21">duty leave</option>
+                        <option value="noclass21">-</option>
+                            </select></td>
+                    </tr>
+                    
+                     <tr><td><center>6</center></td><td>12100686</td><td>Kirti Gaur</td>
+                         
+                          <td><select name ="Row6Col" id="iRow6Col" style="width: 120px; margin: 1px; text-align:right"onchange="myMark1(this.value);">           
+                        <option value="space"></option>
+                        <option value="present22">P</option>
+                        <option value ="absent22">A</option>
+                        <option value="duty22">Duty leave</option>
+                        <option value="noclass22">-</option>
+                            </select></td>
+                    
+                        
+                          <td><select name ="Row6Col2" id="iRow6Col2" style="width: 120px; margin: 1px; text-align:right"onchange="myMark2(this.value);">             
+                        <option value="space"></option>
+                        <option value="present23">P</option>
+                        <option value ="absent23">A</option>
+                        <option value="duty23">duty leave</option>
+                        <option value="noclass23">-</option>
+                            </select></td>
+                        
+                           <td><select name ="Row6Col3" id="iRow6Col3" style="width: 120px; margin: 1px; text-align:right"onchange="myMark3(this.value);">         
+                        <option value="space"></option>
+                        <option value="present24">P</option>
+                        <option value ="absent24">A</option>
+                        <option value="duty24">Duty leave</option>
+                        <option value="noclass24">-</option>
+                            </select></td>
+                    
+                        
+                          <td><select name ="Row6Col4" id="iRow6Col4" style="width: 120px; margin: 1px; text-align:right"onchange="myMark4(this.value);">                
+                        <option value="space"></option>
+                        <option value="present25">P</option>
+                        <option value ="absent25">A</option>
+                        <option value="duty25">duty leave</option>
+                        <option value="noclass25">-</option>
+                            </select></td>
+                        
+                           <td><select name ="Row6Col5" id="iRow6Col5" style="width: 120px; margin: 1px; text-align:right"onchange="myMark5(this.value);">              
+                        <option value="space"></option>
+                        <option value="present26">P</option>
+                        <option value ="absent26">A</option>
+                        <option value="duty26">Duty leave</option>
+                        <option value="noclass26">-</option>
+                            </select></td>
+                
+                          <td><select name ="Row6Col6" id="iRow6Col6" style="width: 120px; margin: 1px; text-align:right"onchange="myMark6(this.value);">                 
+                        <option value="space"></option>
+                        <option value="present27">P</option>
+                        <option value ="absent27">A</option>
+                        <option value="duty27">duty leave</option>
+                        <option value="noclass27">-</option>
+                            </select></td>
+                        
+                            <td><select name ="Row6Col7" id="iRow6Col7" style="width: 120px; margin: 1px; text-align:right"onchange="myMark7(this.value);">              
+                        <option value="space"></option>
+                        <option value="present28">P</option>
+                        <option value ="absent28">A</option>
+                        <option value="duty28">duty leave</option>
+                        <option value="noclass28">-</option>
+                            </select></td>
+                    </tr>
+                    
+                    <tr>
+                    <td colspan=3 class="p-2 mb-2 bg-white text-dark">Attendence Toatal</td>
+                        
+                        <td><input type="text" name="txtregister1" id= "tx1" style= "width:120px; text-align:right"value=0></td> 
+                        <td><input type="text" name="txtregister2" id= "tx2" style= "width:120px; text-align:right"value=0></td>   
+                        <td><input type="text" name="txtregister3" id= "tx3" style= "width:120px; text-align:right"value=0></td>    
+                        <td><input type="text" name="txtregister4" id= "tx4" style= "width:120px; text-align:right"value=0></td>         
+                        <td><input type="text" name="txtregister5" id= "tx5" style= "width:120px; text-align:right"value=0></td>
+                        <td><input type="text" name="txtregister6" id= "tx6" style= "width:120px; text-align:right"value=0></td>
+                        <td><input type="text" name="txtregister7" id= "tx7" style= "width:120px; text-align:right"value=0></td>
+                </table>
+                </div>
+            </div>
+            
+            <script>
+                
+                 function myMark1(element){
+            var q = parseInt(document.getElementById("txt1").value);
+            document.getElementById("txt1").value = q + 1;
+            }
+                
+                 function myMark2(element){
+            var q = parseInt (document.getElementById("txt2").value);
+            document.getElementById("txt2").value = q +1;
+            }
+                
+                 function myMark3(element){
+            var q = parseInt (document.getElementById("txt3").value);
+            document.getElementById("txt3").value = q +1;
+            }
+                
+                 function myMark4(element){
+            var q = parseInt (document.getElementById("txt14").value);
+            document.getElementById("txt14").value = q +1;
+            }
+                
+                 function myMark5(element){
+            var q = parseInt (document.getElementById("txt5").value);
+            document.getElementById("txt5").value = q +1;
+            }
+                
+                 function myMark6(element){
+            var q = parseInt (document.getElementById("txt6").value);
+            document.getElementById("txt6").value = q +1;
+            }
+                
+                 function myMark7(element){
+            var q = parseInt (document.getElementById("txt7").value);
+            document.getElementById("txt7").value = q +1;
+            }
+            </script>
+            
+         </form>   
+    </body>
+</html>
+
+
